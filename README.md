@@ -1,3 +1,5 @@
+!! DO NOT MERGE THIS CHANGE !!
+
 # test mobile github app pact
 
 attempt to test the pact integration for mobile github app testing
