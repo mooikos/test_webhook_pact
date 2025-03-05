@@ -1,3 +1,6 @@
 # environments
 .env
 .env*.local
+
+# node packages
+/node_modules

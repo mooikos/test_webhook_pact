@@ -11,9 +11,6 @@ gem 'ostruct'
 # environment helper
 gem 'dotenv'
 
-# test framework
-gem 'rspec'
-
 # http client
 # gem 'rest-client'
 
@@ -21,3 +18,9 @@ gem 'rspec'
 gem 'octokit'
 ## github authentication helper
 gem 'jwt'
+
+# test framework
+gem 'rspec'
+
+# pact mockserver
+gem 'pact-mock_service', '~> 3.10'
