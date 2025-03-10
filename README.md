@@ -7,8 +7,14 @@ attempt to test the pact integration for mobile github app testing
 ## components
 
 github app
+- installed in the user/organization
+  - configured to have the necessary permissions
+    - configured to listen to `pull request` events
+    - creating `pull requests`
+      - read & write on `pull requests`
+      - read on `contents` (?)
 - configured to [point to local](https://docs.github.com/en/webhooks/testing-and-troubleshooting-webhooks/testing-webhooks#testing-webhook-code-locally)
-  - use [smee]()
+  - use [smee](https://github.com/probot/smee-client)
     - create an entry on https://smee.io
     - start the smee proxy locally
       - `yarn smee -u https://smee.io/YlWcPA7V3ZBnGl --port 9292`
@@ -27,9 +33,11 @@ spec runner
 
 ## start pact mock server
 
+```
 PACT_DO_NOT_TRACK=true bundle exec pact-mock-service \
 --consumer github \
 --provider mobile_github_app \
 --port 9292 \
 --cors=CORS \
 --pact-dir=./pacts/
+```

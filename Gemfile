@@ -12,7 +12,7 @@ gem 'ostruct'
 gem 'dotenv'
 
 # http client
-# gem 'rest-client'
+gem 'rest-client'
 
 # github api helper
 gem 'octokit'
@@ -22,5 +22,7 @@ gem 'jwt'
 # test framework
 gem 'rspec'
 
-# pact mockserver
-gem 'pact-mock_service', '~> 3.10'
+# contract testing framework
+gem 'pact'
+## mockserver
+gem 'pact-mock_service'
